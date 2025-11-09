@@ -1,0 +1,20 @@
+[
+  {
+    "enemyGroupID": 10001,
+    "member": [
+      [
+        405002,
+        1
+      ]
+    ],
+    "formation": 1,
+    "beSkill": [],
+    "combatType": 0,
+    "attrID": [
+      [
+        405002,
+        5001
+      ]
+    ]
+  }
+]

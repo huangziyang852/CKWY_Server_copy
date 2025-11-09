@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Google.Protobuf" Version="3.28.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="PB\" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <IsWindows Condition="'$(OS)' == 'Windows_NT'">true</IsWindows>
+  </PropertyGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <!-- Windows: 执行两条 xcopy -->
+    <Exec Condition="'$(IsWindows)' == 'true'"
+          Command="xcopy /Y &quot;$(TargetDir)$(TargetFileName)&quot; &quot;$(SolutionDir)..\GameServer\lib\&quot;" />
+    <Exec Condition="'$(IsWindows)' == 'true'"
+          Command="xcopy /Y &quot;$(TargetDir)$(TargetFileName)&quot; &quot;$(SolutionDir)..\..\Unity\Project\ckwy\Assets\Proto\&quot;" />
+
+    <!-- Linux: 只执行第一条 cp -->
+    <Exec Condition="'$(IsWindows)' != 'true'"
+          Command="cp -f &quot;$(TargetDir)$(TargetFileName)&quot; &quot;../../../GameServer/lib/&quot;" />
+  </Target>
+
+</Project>

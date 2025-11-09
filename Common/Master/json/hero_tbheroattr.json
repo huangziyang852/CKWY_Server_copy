@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1001,
+    "heroID": 104001,
+    "star": 4,
+    "attrs": [
+      [
+        101,
+        72
+      ],
+      [
+        102,
+        38
+      ],
+      [
+        103,
+        540
+      ],
+      [
+        104,
+        85
+      ]
+    ],
+    "up": [
+      [
+        101,
+        4.83
+      ],
+      [
+        102,
+        4.22
+      ],
+      [
+        103,
+        35.97
+      ],
+      [
+        104,
+        3.4
+      ]
+    ],
+    "normalAtkID": 10100,
+    "battleSkill": 10111,
+    "skillList": [
+      10111,
+      10131
+    ],
+    "beSkillList": [
+      10121
+    ],
+    "bePvPSkillList": [],
+    "hpStarRate": 0,
+    "atkStarRate": 0,
+    "jinjieshi": 0,
+    "needItems": []
+  },
+  {
+    "id": 3003,
+    "heroID": 304002,
+    "star": 4,
+    "attrs": [
+      [
+        101,
+        96
+      ],
+      [
+        102,
+        37
+      ],
+      [
+        103,
+        475
+      ],
+      [
+        104,
+        81
+      ]
+    ],
+    "up": [
+      [
+        101,
+        6.37
+      ],
+      [
+        102,
+        4.16
+      ],
+      [
+        103,
+        31.66
+      ],
+      [
+        104,
+        3.23
+      ]
+    ],
+    "normalAtkID": 30200,
+    "battleSkill": 30111,
+    "skillList": [
+      30211
+    ],
+    "beSkillList": [
+      30221,
+      30231
+    ],
+    "bePvPSkillList": [],
+    "hpStarRate": 0,
+    "atkStarRate": 0,
+    "jinjieshi": 0,
+    "needItems": []
+  },
+  {
+    "id": 3004,
+    "heroID": 304002,
+    "star": 5,
+    "attrs": [
+      [
+        101,
+        96
+      ],
+      [
+        102,
+        37
+      ],
+      [
+        103,
+        475
+      ],
+      [
+        104,
+        91
+      ]
+    ],
+    "up": [
+      [
+        101,
+        6.37
+      ],
+      [
+        102,
+        4.16
+      ],
+      [
+        103,
+        31.66
+      ],
+      [
+        104,
+        3.23
+      ]
+    ],
+    "normalAtkID": 30200,
+    "battleSkill": 30111,
+    "skillList": [
+      30211
+    ],
+    "beSkillList": [
+      30221,
+      30231
+    ],
+    "bePvPSkillList": [],
+    "hpStarRate": 5000,
+    "atkStarRate": 4000,
+    "jinjieshi": 0,
+    "needItems": []
+  }
+]

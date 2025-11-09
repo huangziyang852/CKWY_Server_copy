@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Google.Protobuf" Version="3.28.3" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="8.0.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="8.0.1" />
+    <PackageReference Include="Microsoft.Orleans.Clustering.AdoNet" Version="3.7.2" />
+    <PackageReference Include="Microsoft.Orleans.Runtime.Abstractions" Version="3.7.2" />
+	<PackageReference Include="Microsoft.Orleans.OrleansRuntime" Version="3.7.2" />
+    <PackageReference Include="Microsoft.Orleans.Server" Version="3.7.2" />
+    <PackageReference Include="Orleans.Providers.MongoDB" Version="3.7.0" />
+    <PackageReference Include="OrleansDashboard" Version="3.6.2" />
+    <PackageReference Include="MySql.Data" Version="9.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj" />
+    <ProjectReference Include="..\Grains\Grains.csproj" />
+    <ProjectReference Include="..\IGrains\IGrains.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="GamePb">
+      <HintPath>lib\GamePb.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

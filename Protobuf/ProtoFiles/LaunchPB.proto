@@ -1,0 +1,151 @@
+syntax = "proto3";
+
+package LaunchPB;
+
+enum ProtoCode
+{
+    //账号注册
+    E_Register = 0;
+    //账号注册回复
+    E_RegisterResp = 1;
+    //账号登录
+    E_Login = 2;
+    //账号登录回复
+    E_LoginResp = 3;
+    //获取用户信息
+    E_GetPlayerInfo =4;
+    //获取用户信息回复
+    E_GetPlayerInfoResp =5;
+    //获取英雄列表
+    E_GetHeroInfo = 6;
+    //获取英雄列表回复
+    E_GetHeroInfoResp = 7;
+    //心跳包
+    E_HeartBeat = 8;
+    //抽卡
+    E_Gacha = 9;
+    //抽卡回复
+    E_GachaResultResp = 10;
+    //获取章节信息
+    E_GetWorldInfo = 11;
+    //获取章节信息回复
+    E_GetWorldInfoResp = 12;
+    //获取道具列表
+    E_GetItemInfo =13;
+    //获取道具回复
+    E_GetItemInfoResp = 14;
+    //错误
+    E_ErrorMessage = 999;
+}
+
+message Login
+{
+    int64 openId = 1;
+    string loginToken = 2;
+}
+
+enum LoginResult
+{
+    //成功
+    E_LoginSuccess = 0;
+    //失败：token验证错误
+    E_TokenWrong = 1;
+    //失败: openId错误
+    E_OpenIdWrong = 2;
+}
+
+message LoginResp
+{
+    //登陆结果
+    LoginResult result = 1;
+    //userId
+    string userId =2;
+    //token
+    string loginToken =3;
+    //openId
+    int64 openId = 4;
+}
+
+message HeartBeat{
+    int64 openId = 1;
+}
+
+message GetPlayerInfo{
+    
+}
+
+message BattleSlot{
+    int32 position = 1;
+    string heroCd = 2;
+}
+
+message GetPlayerInfoResp{
+    string UserId = 1;
+    int64 openId = 2;
+    string userName = 3;
+    int32 level = 4;
+    int32 exp = 5;
+    int32 gold = 6;
+    int32 diamond = 7;
+    repeated BattleSlot deck = 8;
+}
+
+
+message GetHeroInfo{
+
+}
+
+message Hero{
+    int32 heroId = 1;
+    string heroCd = 2;
+    int32 level = 3;
+    int32 quality =4;
+    int32 star = 5;
+}
+
+message GetHeroInfoResp{
+    repeated Hero heroes = 1;
+}
+
+message Item{
+    int32 itemId = 1;
+    int32 itemCount = 2;
+}
+
+message GachaReq {
+    int32 gachaId =1;
+    int32 gachaTimes = 2;
+    repeated Item usedItems = 3;
+    int32 usedDiamondCount = 4; 
+}
+
+message GachaResultResp{ 
+    repeated int32 GachaHeroResult = 1;
+    repeated Hero AddHero = 2;
+    repeated Item AddItem = 3;
+}
+
+message GetWorldInfo{
+
+}
+
+message GetWorldInfoResp{
+    repeated World worlds = 1;
+    repeated Stage stages = 2;
+}
+
+message World{
+    int32 worldId = 1;
+}
+
+message Stage{
+    int32 stageId = 1;
+}
+
+message GetItemInfo{
+
+}
+
+message GetItemInfoResp{
+    repeated Item items = 1;
+}

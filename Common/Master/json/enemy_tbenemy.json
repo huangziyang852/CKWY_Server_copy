@@ -1,0 +1,42 @@
+[
+  {
+    "enemyID": 404002,
+    "name": "可可雅尔",
+    "camp": 4,
+    "job": 3,
+    "star": 4,
+    "sex": 1,
+    "height": 190,
+    "width": 160,
+    "head": 404002,
+    "body": 404002,
+    "normalAtkID": 40200,
+    "skillList": [
+      40211,
+      40231
+    ],
+    "beSkillList": [
+      40221
+    ]
+  },
+  {
+    "enemyID": 405002,
+    "name": "可可雅尔",
+    "camp": 4,
+    "job": 3,
+    "star": 5,
+    "sex": 1,
+    "height": 190,
+    "width": 160,
+    "head": 404002,
+    "body": 404002,
+    "normalAtkID": 40200,
+    "skillList": [
+      40211,
+      40231
+    ],
+    "beSkillList": [
+      40221
+    ]
+  }
+]

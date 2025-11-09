@@ -1,0 +1,10 @@
+﻿@model List<string>
+<h2>fileList</h2>
+<ul>
+    @foreach (var file in Model)
+    {
+        <li>
+            <a href="/files/download/@file">@file</a>
+        </li>
+    }
+</ul>

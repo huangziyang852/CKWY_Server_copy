@@ -1,0 +1,45 @@
+# Build Folders
+bin/
+obj/
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.userprefs
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows image file (Windows 8.1/10/11)
+Thumbs.db
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# VS Code directories
+.vscode/
+
+# Rider
+.idea/
+
+# Visual Studio
+.vs/
+
+# Build folders
+Debug/
+DebugPublic/
+Dist/
+DistPublic/
+Debug_x86/
+Debug_x64/
+
+# Windows-specific temp files
+ehthumbs.db

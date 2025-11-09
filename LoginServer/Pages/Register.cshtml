@@ -1,0 +1,50 @@
+﻿@page
+@using LoginServer.Pages;
+@model RegisterModel
+@{
+    ViewData["Title"] = "User Register";
+}
+
+<h2>用户注册</h2>
+
+<form id="registerForm">
+    <label for="account">account:</label>
+    <input type="text" id="account" name="account" required />
+    <br />
+
+    <label for="password">password:</label>
+    <input type="password" id="password" name="password" required />
+    <br />
+
+    <button type="button" onclick="registerUser()">sign in</button>
+</form>
+
+<div id="result"></div>
+
+<script>
+    async function registerUser() {
+        const account = document.getElementById("account").value;
+        const password = document.getElementById("password").value;
+
+        if (!account || !password) {
+            document.getElementById("result").innerText = "the account and password can't be empty";
+            return;
+        }
+
+        const formData = new FormData();
+        formData.append("Account", account);
+        formData.append("Password", password);
+
+        try {
+            const response = await fetch("/UserRegister", {
+                method: "POST",
+                body: formData
+            });
+
+            const result = await response.json();
+            document.getElementById("result").innerText = JSON.stringify(result, null, 2);
+        } catch (error) {
+            document.getElementById("result").innerText = "请求失败：" + error;
+        }
+    }
+</script>

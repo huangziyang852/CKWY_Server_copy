@@ -1,0 +1,16 @@
+[
+  {
+    "id": 30200,
+    "skillID": 30200,
+    "name": "贾迪斯普攻",
+    "icon": 30200,
+    "desc": "",
+    "attackAction": "attack",
+    "attackEffect": "JiaDiSi_attack",
+    "flyEffect": "JiaDiSi_attack_zidan",
+    "hitEffect": "JiaDiSi_attack_hit",
+    "fireSound": "3040023",
+    "flySound": "",
+    "hitSound": "3040023_hit"
+  }
+]

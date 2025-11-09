@@ -1,0 +1,6 @@
+@GateServer_HostAddress = http://localhost:8080/tk
+
+GET {{GateServer_HostAddress}}/GetServerList/
+Accept: application/json
+
+###
