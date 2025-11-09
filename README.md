@@ -37,8 +37,11 @@ TCP / WebSocket 対応、クライアント接続管理、メッセージのシ�
 Orleans の Virtual Actor モデル を使用し、スレッド安全で高拡張なゲームロジックを実現、ゲーム内のエンティティ（モンスター、世界状態）を Actor 化、データ保存
 
 ### 開発環境
+
 .NET 8
+
 Orleans	3.7.2
+
 DotNetty	0.7.6
 
 ### Demo
