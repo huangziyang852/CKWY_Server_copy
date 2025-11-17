@@ -50,3 +50,5 @@ https://www.aoisorastory.com/unity/index.html
 
 クライアントに関する説明は以下のRepositoryを参照。
 https://github.com/huangziyang852/CKWY_Client_Copy
+
+現在実装している機能はまだ少ないため、具体的には以下の動画をご参照ください。 https://youtu.be/5S5HEo3sRck
